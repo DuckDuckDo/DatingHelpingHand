@@ -385,5 +385,8 @@ class Website:
             )
             time.sleep(wait_time)
 
-
-Website().start()
+while True:
+    try:
+        Website().start()
+    except:
+        print('An error happened')
